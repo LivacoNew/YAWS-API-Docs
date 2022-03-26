@@ -7,7 +7,7 @@ Uses Vue and Tailwind, no fancy laravel backend bullshit.
 PrismJS is used for syntax highlighting in code blocks.
 
 ## How do I start this contraption?
-`npm install` To install the packages after cloning.
+`npm install` To install the packages after cloning.  
 `npm run dev` For development.  
 `npm run build` If you wanna fully compile it for some reason.
 
