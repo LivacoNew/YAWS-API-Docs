@@ -4,6 +4,7 @@
     import ContentLink from "../formatting/ContentLink.vue";
     import CodeBlock from "../formatting/CodeBlock.vue";
     import CodeInline from "../formatting/CodeInline.vue";
+    import Warning from "../formatting/Warning.vue";
 
     export default {
         components: {
@@ -11,7 +12,8 @@
             ContentHighlight,
             ContentLink,
             CodeBlock,
-            CodeInline
+            CodeInline,
+            Warning
         }
     };
 </script>
@@ -59,6 +61,13 @@
 
         <p><CodeInline>:next</CodeInline> should be passed the function that will handle the data returned. <CodeInline>:catch</CodeInline> should be for error handling.</p>
         <p>You should ensure that your user is aware that the addon is waiting for a response, via a Loading Screen or some kind of message.</p>
+        <p class="mt-4">Error tracing in async's :catch: might be a bit undetailed. For this, YAWS provides the <CodeInline>YAWS.Core.Trace("Name of Trace", ErrorData)</CodeInline> function to be used inside it, like so:</p>
+        <CodeBlock>
+            :catch(function(err)
+                YAWS.Core.Trace("My Player Fetch", err)
+            end)
+        </CodeBlock>
+        <img src="https://upload.livaco.dev/u/rjZBKFC9se.png" />
         <p class="mt-4">Still unsure? Ask someone who does know what they're doing to explain it better than I ever could.</p>
     </ContentSection>
 
@@ -71,15 +80,17 @@
             <li class="my-2"><ContentHighlight>Your addon/modiciation must be as secure as possible.</ContentHighlight> This is an administration mod after all, if it's not secure people can exploit and and perform actions that aren't allowed. Validate everything, never trust the client, etc. If you aren't sure on how to make a secure addon, <ContentHighlight>don't fucking try to make anything.</ContentHighlight></li>
         </ul>
 
-        <p class="mt-10">Some other good practices you should probably follow:</p>
+        <p class="mt-10">Some other good practices you should probably follow, but aren't enforced:</p>
         <ul class="list-disc list-inside mt-4">
             <li class="my-2"><ContentHighlight>Confirm the Version.</ContentHighlight> The addon API could change in the future, and your addon could easily break if the server owner updates their addon before yours is ready. Add a simple version check that stops your addon from running if it's not the version it's expecting.<br>
             You can easily fetch the current version using the following variables:
+            <Warning class="my-4">These variables will not be present in versions before 2.0.0. Check if any of these are nil before actual version checking.</Warning>
             <CodeBlock>
-                print(YAWS.Version.Major)     -- "2"
-                print(YAWS.Version.Minor)     -- "0"
-                print(YAWS.Version.Patch)     -- "0"
-                print(YAWS.Version.Release)   -- "2.0.0"
+                print(YAWS.Version.Major)     -- 2
+                print(YAWS.Version.Minor)     -- 0
+                print(YAWS.Version.Patch)     -- 0
+                print(YAWS.Version.Suffix)    -- "Stable"
+                print(YAWS.Version.Release)   -- "2.0.0 (Stable)"
             </CodeBlock>
             </li>
             <li class="my-2"><ContentHighlight>Keep the UI consistent.</ContentHighlight> If you're making a UI alongside your addon, and your addon is purely as an addition to YAWS, try to keep the UI in a similar style to YAWS. It's not exactly reccomended to use YAWS's VGUI components as they're built in a very specific way, but if you can figure them out go for it.</li>

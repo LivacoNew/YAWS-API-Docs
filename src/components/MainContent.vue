@@ -2,6 +2,7 @@
     import IntroductionSection from "./sections/IntroductionSection.vue";
     import WarningsSection from "./sections/WarningsSection.vue";
     import DataSection from "./sections/DataSection.vue";
+    import HooksSection from "./sections/HooksSection.vue";
     import PlayerSection from "./sections/PlayerSection.vue";
 
     export default {
@@ -9,6 +10,7 @@
             IntroductionSection,
             WarningsSection,
             DataSection,
+            HooksSection,
             PlayerSection
         }
     };
@@ -21,6 +23,7 @@
         <IntroductionSection></IntroductionSection>
         <WarningsSection></WarningsSection>
         <PlayerSection></PlayerSection>
+        <HooksSection></HooksSection>
         <DataSection></DataSection>
 
         <p class="text-center text-xs text-text-light-copyright dark:text-text-dark-copyright">hi, your at the end</p>

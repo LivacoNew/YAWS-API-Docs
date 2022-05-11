@@ -26,6 +26,10 @@
 			<SidebarLink title="Fetch Player Data" id="player-fetch"></SidebarLink>
 			<SidebarLink title="Update Player Data" id="player-update"></SidebarLink>
 		</SidebarCategory>
+		<SidebarCategory category="Hooks">
+			<SidebarLink title="Player Warned" id="hooks-warned"></SidebarLink>
+			<SidebarLink title="Warn Deleted" id="hooks-warnremoved"></SidebarLink>
+		</SidebarCategory>
 		<SidebarCategory category="Data Structures">
 			<SidebarLink title="Warning" id="data-warning"></SidebarLink>
 			<SidebarLink title="Player" id="data-player"></SidebarLink>
