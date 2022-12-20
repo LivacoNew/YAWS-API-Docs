@@ -21,6 +21,7 @@
 			<SidebarLink title="Fetch Warning by ID" id="warn-fetch-id"></SidebarLink>
 			<SidebarLink title="Fetch Player's Warnings" id="warn-fetch-player"></SidebarLink>
 			<SidebarLink title="Warn Player" id="warn-player"></SidebarLink>
+			<SidebarLink title="Is Player immune" id="warn-immune"></SidebarLink>
 			<SidebarLink title="Deleting Warnings" id="warn-remove"></SidebarLink>
 		</SidebarCategory>
 		<SidebarCategory category="Players">

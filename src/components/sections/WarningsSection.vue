@@ -167,6 +167,44 @@
         <img src="https://upload.livaco.dev/u/T6RhqHzvjb.png">
     </ContentSection>
 
+    <ContentSection title="Is Player Immune" id="warn-immune">
+        <Warning class="mb-8">This function uses Async logic! Ensure your incorporate this into your code!</Warning>
+
+        <CodeInline>YAWS.API.IsPlayerImmune(SteamID)</CodeInline>
+        <h3 class="mt-4 text-xl">Description</h3>
+        <p>Checks if a <ContentLink href="#data-player" noRedir>Player</ContentLink> is immune from being warned.</p>
+
+        <h3 class="mt-4 text-xl">Parameters</h3>
+        <ul class="list-disc list-inside">
+            <li>SteamID: (String/SteamID) The SteamID/SteamID64 of the player to warn.</li>
+        </ul>
+
+        <h3 class="mt-4 text-xl">Returns</h3>
+        <ul class="list-disc list-inside">
+            <li>Boolean indicating if they are immune or not.</li>
+        </ul>
+
+        <h3 class="mt-4 text-xl">Example</h3>
+        <p>Checks if Livaco is immune from being warned.</p>
+        <CodeBlock>
+            YAWS.API.IsPlayerImmune("STEAM_0:1:80376292")
+                :next(function(data)
+                    if(data) then 
+                        print("Livaco is immune.")
+                    else
+                        print("Livaco isn't immune.")
+                    end 
+                end)
+                :catch(function(err)
+                    print("Error: " .. reject)
+                end)
+        </CodeBlock>
+        <p>Output:</p>
+        <CodeBlock>
+            Livaco isn't immune.
+        </CodeBlock>
+    </ContentSection>
+    
     <ContentSection title="Deleting Warnings" id="warn-remove">
         <CodeInline>YAWS.API.DeleteWarningByID(WarningID)</CodeInline>
         <h3 class="mt-4 text-xl">Description</h3>
