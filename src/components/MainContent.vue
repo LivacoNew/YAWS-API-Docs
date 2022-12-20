@@ -17,8 +17,8 @@
 </script>
 
 <template>
-    <div class="flex-1 p-8 bg-light-bg dark:bg-dark-bg">
-        <img src="/src/assets/yaws.svg" class="w-96 mb-16">
+    <div class="flex-initial overflow-auto p-8 bg-light-bg dark:bg-dark-bg">
+        <img src="/src/assets/yaws.svg" class="w-full sm:w-96 mb-16">
 
         <IntroductionSection></IntroductionSection>
         <WarningsSection></WarningsSection>
@@ -26,6 +26,6 @@
         <HooksSection></HooksSection>
         <DataSection></DataSection>
 
-        <p class="text-center text-xs text-text-light-copyright dark:text-text-dark-copyright">hi, your at the end</p>
+        <p class="text-center text-xs text-text-light-copyright dark:text-text-dark-copyright mb-8">hi, your at the end</p>
     </div>
 </template>

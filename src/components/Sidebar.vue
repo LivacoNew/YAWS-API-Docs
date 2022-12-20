@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="bg-sidebar-light-bg dark:bg-sidebar-dark-bg drop-shadow-lg dark:drop-shadow-none p-8 h-screen flex-none flex-col sticky top-0">
+    <div class="bg-sidebar-light-bg dark:bg-sidebar-dark-bg drop-shadow-lg dark:drop-shadow-none hidden lg:block p-8 h-screen flex-none sticky top-0 overflow-y-auto">
 		<div class="flex justify-center">
 			<img src="/src/assets/yaws.svg" class="w-40 mb-4">
 		</div>
