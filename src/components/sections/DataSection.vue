@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold mb-2">Data Structures</h1>
+    <h1 class="text-3xl font-bold mb-2" id="section-data">Data Structures</h1>
     <p class="mb-4">YAWS's API returns the same data structure for every object, in order to avoid confusion. This section dictates how those structures are defined.</p>
 
     <ContentSection title="Warning" id="data-warning">

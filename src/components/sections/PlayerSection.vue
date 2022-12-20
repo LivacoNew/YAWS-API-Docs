@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold mb-2">Players</h1>
+    <h1 class="text-3xl font-bold mb-2" id="section-players">Players</h1>
     <p class="mb-4">YAWS stores partial player data in a database for use after they disconnect. This API category allows you to modify that data.</p>
 
     <ContentSection title="Fetch Player Data" id="player-fetch">

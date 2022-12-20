@@ -11,28 +11,28 @@
 			<img src="/src/assets/yaws.svg" class="w-40 mb-4">
 		</div>
 
-		<SidebarCategory category="Introduction">
+		<SidebarCategory category="Introduction" id="section-introduction">
 			<SidebarLink title="Yet Another Warning System" id="intro-yaws"></SidebarLink>
 			<SidebarLink title="Async Usage" id="intro-async"></SidebarLink>
 			<SidebarLink title="Some Ground Rules" id="intro-rules"></SidebarLink>
 		</SidebarCategory>
 
-		<SidebarCategory category="Warnings">
+		<SidebarCategory category="Warnings" id="section-warnings">
 			<SidebarLink title="Fetch Warning by ID" id="warn-fetch-id"></SidebarLink>
 			<SidebarLink title="Fetch Player's Warnings" id="warn-fetch-player"></SidebarLink>
 			<SidebarLink title="Warn Player" id="warn-player"></SidebarLink>
 			<SidebarLink title="Is Player immune" id="warn-immune"></SidebarLink>
 			<SidebarLink title="Deleting Warnings" id="warn-remove"></SidebarLink>
 		</SidebarCategory>
-		<SidebarCategory category="Players">
+		<SidebarCategory category="Players" id="section-players">
 			<SidebarLink title="Fetch Player Data" id="player-fetch"></SidebarLink>
 			<SidebarLink title="Update Player Data" id="player-update"></SidebarLink>
 		</SidebarCategory>
-		<SidebarCategory category="Hooks">
+		<SidebarCategory category="Hooks" id="section-hooks">
 			<SidebarLink title="Player Warned" id="hooks-warned"></SidebarLink>
 			<SidebarLink title="Warn Deleted" id="hooks-warnremoved"></SidebarLink>
 		</SidebarCategory>
-		<SidebarCategory category="Data Structures">
+		<SidebarCategory category="Data Structures" id="section-data">
 			<SidebarLink title="Warning" id="data-warning"></SidebarLink>
 			<SidebarLink title="Player" id="data-player"></SidebarLink>
 		</SidebarCategory>

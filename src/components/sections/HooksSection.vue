@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold mb-2">Hooks</h1>
+    <h1 class="text-3xl font-bold mb-2" id="section-hooks">Hooks</h1>
     <p class="mb-4">YAWS runs hooks for you to use to listen to YAWS's events.</p>
     <p class="mb-4"><ContentHighlight>Important Note: </ContentHighlight>Not all hooks might be ran instantly as they happen, some of them go through a proxy function first to format the data to be the expected data structures. This shouldn't be a problem, but in case it is this warning is here to let you know :)</p>
 

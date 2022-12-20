@@ -2,7 +2,8 @@
     import { BIconArrowRightShort } from "bootstrap-icons-vue";
     export default {
         props: {
-            category: String
+            category: String,
+            id: String
         },
         components: {
             BIconArrowRightShort
@@ -13,7 +14,7 @@
 
 <template>
     <div class="pt-4">
-        <p class="font-semibold"><BIconArrowRightShort class="inline-block"></BIconArrowRightShort> {{ category }}</p>
+        <a v-bind:href="'#' + id" class="font-semibold"><BIconArrowRightShort class="inline-block"></BIconArrowRightShort> {{ category }}</a>
 
         <slot></slot>
     </div>

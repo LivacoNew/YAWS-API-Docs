@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold mb-4">Introduction</h1>
+    <h1 class="text-3xl font-bold mb-4" id="section-introduction">Introduction</h1>
 
     <ContentSection title="Yet Another Warning System" id="intro-yaws">
         <p>Welcome to the Lua API documentation for Yet Another Warning System.</p>

@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold mb-2">Warnings</h1>
+    <h1 class="text-3xl font-bold mb-2" id="section-warnings">Warnings</h1>
     <p class="mb-4">Anything related to fetching, giving or modifying warnings.</p>
 
     <ContentSection title="Fetch Warning by ID" id="warn-fetch-id">
