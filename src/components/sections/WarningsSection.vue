@@ -128,6 +128,45 @@
         </CodeBlock>
     </ContentSection>
 
+    <ContentSection title="Warn Player" id="warn-player">
+        <Warning class="mb-8">This function uses Async logic! Ensure your incorporate this into your code!</Warning>
+
+        <CodeInline>YAWS.API.WarnPlayer(SteamID, Administrator, Reason, PointCount, ServerID)</CodeInline>
+        <h3 class="mt-4 text-xl">Description</h3>
+        <p>Warns the specified player using the information applied. Returns the <ContentLink href="#data-warning" noRedir>Warning</ContentLink> data.</p>
+
+        <h3 class="mt-4 text-xl">Parameters</h3>
+        <ul class="list-disc list-inside">
+            <li>SteamID: (String/SteamID) The SteamID/SteamID64 of the player to warn.</li>
+            <li>Administrator: (String/SteamID) The SteamID/SteamID64 of the admin that warned the player.</li>
+            <li>Reason: (String) The reason for the warning. Cannot be longer than 150 characters.</li>
+            <li>PointCount: (Number) The point count of the warning.</li>
+            <li>ServerID: (String/ServerID) Optional. The ServerID the warning was given from, will automatically use the server executing the code otherwise.</li>
+        </ul>
+
+        <h3 class="mt-4 text-xl">Returns</h3>
+        <ul class="list-disc list-inside">
+            <li>True if warning was created successfully. An error message if not.</li>
+        </ul>
+
+        <h3 class="mt-4 text-xl">Example</h3>
+        <p>Warns Livaco.</p>
+        <CodeBlock>
+            YAWS.API.WarnPlayer("76561198121018313", "76561198121018313", "Abusing the developer docs website.", 5)
+                :next(function(success) 
+                    print("Warned Livaco.")
+                end)
+                :catch(function(err)
+                    print("Error: " .. err)
+                end)
+        </CodeBlock>
+        <p>Output:</p>
+        <CodeBlock>
+            Warned Livaco.
+        </CodeBlock>
+        <img src="https://upload.livaco.dev/u/T6RhqHzvjb.png">
+    </ContentSection>
+
     <ContentSection title="Deleting Warnings" id="warn-remove">
         <CodeInline>YAWS.API.DeleteWarningByID(WarningID)</CodeInline>
         <h3 class="mt-4 text-xl">Description</h3>
