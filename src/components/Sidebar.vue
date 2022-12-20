@@ -41,7 +41,7 @@
 			<button onclick="window.open('https://discord.gg/BSC4ZuD', '_blank').focus()">
 				<BIconDiscord class="inline-block mx-2"></BIconDiscord>
 			</button>
-			<button onclick="window.open('https://www.gmodstore.com/market/view/yet-another-warning-system-yaws-user-warning-and-punishment-system', '_blank').focus()">
+			<button onclick="window.open('https://www.gmodstore.com/market/view/c8dcc2bc-91cb-486d-9540-4d0890cacc6e', '_blank').focus()">
 				<BIconCartFill class="inline-block mx-2"></BIconCartFill>
 			</button>
 		</div>
