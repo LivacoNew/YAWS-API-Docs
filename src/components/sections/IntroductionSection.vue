@@ -36,6 +36,8 @@
         <p>If you're developing and are struggling, come join <ContentLink href="https://discord.gg/BSC4ZuD">My Discord Server</ContentLink>, where you can get help from either me or one of the other nerd programmers in there.</p>
             
         <p class="mt-4">Published something public to use? Cool! Let me know, I'll add it to a list for server owners to see and download!</p>
+
+        <p class="mt-1">Last update to documentation: 20/12/2022</p>
     </ContentSection>
 
     <ContentSection title="Async Usage" id="intro-async">
