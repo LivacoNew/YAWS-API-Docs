@@ -95,7 +95,6 @@
                 print(YAWS.Version.Release)   -- "2.0.0 (Stable)"
             </CodeBlock>
             </li>
-            <li class="my-2"><ContentHighlight>Keep the UI consistent.</ContentHighlight> If you're making a UI alongside your addon, and your addon is purely as an addition to YAWS, try to keep the UI in a similar style to YAWS. It's not exactly reccomended to use YAWS's VGUI components as they're built in a very specific way, but if you can figure them out go for it.</li>
         </ul>
     </ContentSection>
 </template>
